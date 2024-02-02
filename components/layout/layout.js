@@ -13,7 +13,7 @@ function Layout(props){
        containerStyle={{margin:"8px"}}
        toastOptions={{
          success:{
-           duration:1000
+           duration:3000
          },
          error:{
            duration:1000,
