@@ -13,10 +13,8 @@
 }
 
 export function getStaticProps(){
-
   const featuredPosts = getFeaturedPosts();
   
-
   return {
     props:{
       posts:featuredPosts

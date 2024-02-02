@@ -6,10 +6,8 @@ function MainNavigation(){
         <>
         <header className={classes.header}>
       <Link href="/">
-      
       <Logo/>
-     
-      </Link> 
+     </Link> 
         <nav>
         <ul>
         <li>

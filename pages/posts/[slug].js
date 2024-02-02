@@ -1,21 +1,17 @@
 import PostContent from "../../components/posts/pos-detail/post-content"
-import {getPostData, getPostsFile} from "../../lib/post-util"
+import { getPostData, getPostsFile } from "../../lib/post-util"
 function PostDetailsPage(props){
 
-    
     return(
         <>
-       
-        <PostContent post={props.post}/ >
+       <PostContent post={props.post}/ >
         </>
     )
 }
 
 export function getStaticProps(context){
-    const {params} = context;
-    const {slug} = params
-
-   const postData = getPostData(slug)
+    const {params:{slug}} = context;
+    const postData = getPostData(slug)
 
    return {
     props:{

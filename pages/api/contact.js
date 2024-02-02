@@ -31,7 +31,6 @@ async function handler(req,res){
         client = await  MongoClient.connect(`mongodb+srv://akhileshyadav870765:akhilesh@cluster0.ivyko2f.mongodb.net/?retryWrites=true&w=majority`);
 
     } catch (error) {
-        console.log("aky")
         res.status(500).json({message:'Could not connect to database'})
         return 
     }
